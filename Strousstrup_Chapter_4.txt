@@ -1,0 +1,72 @@
+Chapter 4. Stroustrup
+
+Focus: How to compute a value from a set of operands, how to choose among alternative actions (selection) and repeat (iteration).
+Name subcomputation and specify separately (a function). Introduce vector type.
+
+
+4.1 Computation
+4.2 Objective and tools
+4.3 Expressions
+	4.3.1 Constant expressions
+	4.3.2 Operators
+	4.3.3 Conversions
+4.4 Statements
+	4.4.1 Selections
+	4.4.2 Iterations
+4.5 Functions
+	4.5.1 Why bother with functions
+	4.5.2 Function declarations
+4.6 Vector
+	4.6.1 Traversing a vector
+	4.6.2 Growing a vector
+	4.6.3 A numeric example
+	4.6.4 A text example
+4.7 Language feature
+
+*** Notes ***
+
+4.1 Computation:
+	Act of producing some outputs based on some inputs. Inputs can come from various sources, keyboard, mouse, touch screen, files etc. Output can also go to wide variety of destinations, to a screen, ot a file, to network connections, ot other output devices. for example : network interfaces, music synthesizers, ellectric motots, lighe generators, heaters ,etc.
+
+4.2 Objective and tools:
+	Express computation correctly, simply and efficiently.
+	Organize a program: break up big computation into many little ones. Done in two different ways:
+		* Abstraction 
+		* Divide and conquer
+	* Abstraction: Hide details that we do not need to use a facility. For example: instead of considering details to sort a phone book, just call the sort algorithm from standard C++ library. The IOSREAMS save us from directly dealing with hardwares i/o port.
+	* Divide and Conquer: Take a large program and divide it into several little ones. For example: large problem build a dictionary, split it into three jobs, read the data, sort the data and output the data. Each of the resulting problem is smaller than the original ones.
+
+4.3 Expressions
+	The most basic building block of programs is an expression. An expression computes a value from a number of operands. Example of some expressions are: names of variables, computation.
+
+int x =0;  // a literal integer
+int y = x + 1; // addition, a computation.
+
+4.3.1 Constant expressions: Expression that do not change. Symbolic constants and magic constant. A magic constant would be a numeric value that you just type into some code with no explanation about why it is there. 
+	constantexpr double pi = 3.14159   // constantexpr is a symbolic constant. 
+	float areaOfCircle(float radius) { // magic constant, symbolic would be to use pi instead of 3.14159 
+ 	return radius * radius * 3.14159
+	}
+Example:	
+	const int a =5 + n; // from c-98, value is not known during compile time. 
+	constexpr double pi = 3.14159; 
+
+4.3.2 Operators: 
+Example: 	
+	f(a) = function call
+	--a = decrement the value and use it, etc. 
+
+4.3.3 Conversions: Ability to mix different types in expressions. 
+	5/2 is 2 
+	2.5/2 means 2.5/double(2) = 1.25 
+	so the notation type(value) and type{value} means convert value to type
+
+4.4 Statements:
+	
+
+
+
+
+
+
+
